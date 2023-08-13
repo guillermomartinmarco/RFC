@@ -17,11 +17,24 @@ body[lang=es] [lang]:not([lang=es]) {
   display: none
 }
 
-#sel-idioma {
+/* Estilos de los selectores del menú de opciones */
+#sel-lang {
+  position: fixed;
+  top: 0em;
+  left: 0.5em;
+}
+
+#sel-link-style {
   position: fixed;
   top: 1em;
-  left: 1em;
+  left: 0.5em;
 }
+
+.label {
+  font-size: smaller;
+}
+
+/****************/
 
 .alignRight {
   text-align: right;
@@ -104,6 +117,18 @@ blockquote {
 
 /************************/
 
+/* Estilos Links */
+/*
+a:link{
+  color: unset;
+  text-decoration:dashed;
+}
+
+a:visited{
+  color: green;
+  text-decoration: dashed;
+}
+**/
 [rel="author"] {
   font-variant: small-caps;
 }
@@ -111,6 +136,8 @@ blockquote {
 [rel="external"] {
   font-family: monospace;
 }
+
+/************************/
 
 .centrado {
   text-align: center;
@@ -159,6 +186,8 @@ td {
   text-align: left;
 }
 
+/**************************/
+
 /* Tabla de autores */
 table.autores-RFC {
   border: 0;
@@ -188,6 +217,9 @@ table.autores-RFC td:last-child {
   padding-left: 1rem;
 }
 
+/**********************/
+
+
 /* Tabla de referencias */
 dt {
   padding-top: 1em;
@@ -197,6 +229,8 @@ dd>p {
   margin-top: 0;
   margin-bottom: 0.5em;
 }
+
+/*********************/
 
 .bold {
   font-weight: bold;
@@ -227,7 +261,6 @@ dd>p {
 }
 
 /* Tabla de contenido */
-
 ul.dotleader {
   max-width: 40em;
   padding: 0em;
@@ -259,6 +292,8 @@ ul.dotleader li>span:nth-child(2) {
   padding-left: 1em;
   background: black;
 }
+
+/***************************************/
 
 body>footer {
   display: flex;
@@ -352,7 +387,12 @@ body>footer {
     background: white;
   }
 
-  #sel-idioma {
+  #sel-lang {
+    visibility: hidden;
+    display: none;
+  }
+
+  #sel-link-style {
     visibility: hidden;
     display: none;
   }

@@ -6,15 +6,26 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>RFC: 2616 - Protocolo de Transferencia de Hipertexto ‒ HTTP/1.1</title>
    <link rel="stylesheet" href="../css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
    <script src="../js/scripts.js"></script>
 </head>
 
 <body lang="es">
-   <select id="sel-idioma" onChange="langChange(this)">
-      <option selected value="es">Español</option>
-      <option value="en">English</option>
-   </select>
-
+   <div id="sel-lang">
+      <select onChange="langChange(this)">
+         <option selected value="es">Español</option>
+         <option value="en">English</option>
+      </select>
+      <code lang="en" class="label">Language</code>
+      <code lang="es" class="label">Idioma</code>
+   </div>
+   <div id="sel-link-style">
+      <select onChange="linkStyleChange(this)">
+         <option selected value="normal">Normal</option>
+         <option value="no-style">No Style</option>
+      </select>
+      <code class="label">Links</code>
+   </div>
    <header>
       <h1>RFC: 2616</h1>
 
